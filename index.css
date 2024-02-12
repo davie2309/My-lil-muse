@@ -1,0 +1,268 @@
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    margin: 10px;
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+
+
+.hrt {
+    width: 50px;
+    height: 50px;
+    margin-left: 49%;
+    
+   
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 5px;
+    transition: 2s ease-in;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.933);
+    font-family: 'Permanent Marker', cursive;
+}
+
+.note {
+    color: rgba(255, 255, 255, 0.933);
+}
+
+
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem; 
+    font-size: 1.6rem;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    order: 1;
+    background-color: rgb(243, 156, 204);
+    transition: 1s;
+}    
+
+.ani {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.tion {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;  
+    opacity: 0; 
+    
+}
+
+.tion.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.tion.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+#password-section {
+    text-align: center;
+    margin-top: 20px;
+    display: none; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="password"] {
+    padding: 8px;
+    font-size: 14px;
+}
+.box {
+
+   display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+    order: 1;
+    flex-direction: row;
+}
+
+.card-container {
+    display: flex;
+ 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+.card-container2 {
+    display: flex;
+  
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+
+.card-container {
+   
+    display: flex;
+    flex-direction: row; /* Aligns items horizontally */
+    justify-content: center; /* Horizontally aligns items in the center */
+    align-items: center; /* Vertically aligns items in the center */
+    flex-wrap: wrap; /* Allows the items to wrap onto the next line if necessary */
+}
+
+.box {
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    order: 2;
+}
+
+.card {
+    margin-top: 200px;
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background:  rgb(247, 234, 241);
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+  .card:before,
+  .card:after
+  {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: rgb(247, 234, 241);
+    transition: 0.5s;
+    z-index:-1;
+  }
+  .card:hover{
+    width: 300px;
+    height: 550px;
+    transition:0.3s;
+  }
+  .card:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card .imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .card:hover .imgBx
+  {
+    bottom: 80px;
+  }
+
+  .card .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height:300px;
+      object-fit: cover;
+  }
+
+  .card .details {
+    position: absolute;
+    padding-top: 0px;
+    margin-top: 0%;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    max-height: none;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .details {
+    opacity: 1;
+}
+
+.card .details p {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 15px;
+    color: #ff7fbb;
+}
+
+ 
+.box {
+    display: none; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+    order: 1;
+}
+
+
+
+

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fce8ea; /* Light pink */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff85a2; /* Pink */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+#reasons ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reasons li {
+    margin-bottom: 10px;
+    background-color: #ffedf2; /* Lighter pink */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#card p {
+    margin-bottom: 15px;
+}
+
+#countdown #timer {
+    font-size: 24px;
+   
+}
