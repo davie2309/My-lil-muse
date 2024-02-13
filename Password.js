@@ -1,6 +1,6 @@
 function checkPassword() {
     var password = document.getElementById("password").value;
-    var passwordHint = "Your password hint goes here.";
+    var passwordHint = "Your Nickname.";
 
     if (password === "Loni") {
         alert("Correct password! Welcome.");
